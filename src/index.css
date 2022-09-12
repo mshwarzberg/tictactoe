@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #777;
+}
+
+#App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  width: 100vw;
+}
+
+#grid-container {
+  height: 45rem;
+  width: 45rem;
+  border: 2px solid black;
+  margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.box {
+  width: 15rem;
+  height: 15rem;
+  background-color: #ccc;
+  outline: 2px solid black;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box:hover {
+  background-color: #bbb;
+}
