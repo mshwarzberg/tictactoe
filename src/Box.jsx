@@ -10,7 +10,7 @@ export default function Box({
 }) {
   return (
     <div
-      className="box"
+      className={`box ${value || winner ? "disabled" : ""}`}
       onClick={() => {
         if (value || winner) {
           return;

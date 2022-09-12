@@ -30,12 +30,6 @@ function App() {
     }
   }, [player, board]);
 
-  useEffect(() => {
-    if (winner) {
-      alert(winner);
-    }
-  }, [winner]);
-
   const renderBoard = board.map((item, index) => {
     return (
       <Box
@@ -53,7 +47,11 @@ function App() {
   return (
     <>
       <h1>Tic Tac Toe</h1>
-      {winner ? <h1>{winner} has won!</h1> : <h1>{player}'s turn</h1>}
+      {winner ? (
+        <h1 id="winner">{winner} has won!</h1>
+      ) : (
+        <h1>{player}'s turn</h1>
+      )}
       <div id="grid-container">{renderBoard}</div>
     </>
   );

@@ -18,6 +18,11 @@ h1 {
   width: 100vw;
 }
 
+#winner {
+  color: white;
+  font-size: 3rem;
+}
+
 #grid-container {
   height: 45rem;
   width: 45rem;
@@ -39,6 +44,13 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.box.disabled {
+  cursor: not-allowed;
+  background-color: #666;
+}
+.box.disabled:hover {
+  background-color: #666;
 }
 .box:hover {
   background-color: #bbb;
